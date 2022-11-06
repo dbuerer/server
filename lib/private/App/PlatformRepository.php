@@ -145,7 +145,8 @@ class PlatformRepository {
 	 * @param string $fullVersion optional complete version string to give more context
 	 * @throws \UnexpectedValueException
 	 */
-	public function normalizeVersion(string $version, ?string $fullVersion = null): string {
+	//public function normalizeVersion(string $version, ?string $fullVersion = null): string {
+	public function normalizeVersion($version, $fullVersion = null) {	
 		$version = trim($version);
 		if (null === $fullVersion) {
 			$fullVersion = $version;
